@@ -61,7 +61,7 @@ function renderContests() {
     upcomingList.innerHTML += `
       <p>
         <strong>${c.name}</strong><br>
-        • ${c.platform}<br>
+        ${c.platform}<br>
          ${c.date} ${c.time}
       </p>
     `;
@@ -71,7 +71,7 @@ function renderContests() {
     pastList.innerHTML += `
       <p>
         <strong>${c.name}</strong><br>
-        • ${c.platform}<br>
+        ${c.platform}<br>
          ${c.date}  ${c.time}
       </p>
     `;
@@ -80,3 +80,4 @@ function renderContests() {
 
 renderContests();
 setInterval(renderContests, 60000); // auto check every minute
+
