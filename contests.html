@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contests</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <div class="sidebar">
+        <div class="logo"><i class="fa-solid fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="tracker.html">Tracker</a></li>
+            <li class="active">Contests</li>
+            <li><a href="revision.html">Revision</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <h1>Contests</h1>
+        <form id="contestForm">
+            <input type="text" id="contestName" placeholder="Contest name" required>
+            <input type="text" id="platform" placeholder="Platform" required>
+            <input type="date" id="contestDate" required>
+            <input type="time" id="time" required>
+            <button type="submit">Add Contest</button>
+        </form>
+        <br><br>
+        <div class="cards-container">
+            <div class="card" id="upcomingContest">
+                <h3>Upcoming Contest</h3>
+                <div id="upcomingList"></div>
+            </div>
+
+            <div class="card" id="pastCard">
+                <h3>Previous contests</h3>
+                <div id="pastList"></div>
+            </div>
+        </div>
+        
+
+        <!-- list of contests -->
+        <div id="contestList"></div>
+    </div>
+
+</div>
+<script src="contests.js"></script>
+</body>
+</html>
+

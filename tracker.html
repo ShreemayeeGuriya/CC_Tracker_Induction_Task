@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CC Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <div class="sidebar">
+        <div class="logo"><i class="fa-solid fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li class="active">Tracker</li>
+            <li><a href="contests.html">Contests</a></li>
+            <li><a href="revision.html">Revision</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <h1>Tracker</h1>
+        <form id="problemForm">
+            <input type="text" id="topicInput" placeholder="Topic (e.g. Arrays)" required>
+            <input type="text" id="problemInput" placeholder="Problem name / link" required>
+            <button type="submit">Add Problem</button>
+        </form>
+        <br><br>
+        <div   class="cards-container">
+
+            <div class="tracker-header">
+                <h3>Problems Solved Today</h3>
+                <p id="count">0</p>
+            </div>
+            <div id="problemsList"></div>
+        </div>
+        <div class="tracker-layout">
+
+  <!--Active cards -->
+  <div class="cards-container" id="activeCards"></div>
+
+  <!--Completed table -->
+  <div class="table-container">
+    <h2>Completed Problems</h2>
+
+    <table id="completedTable">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Topic</th>
+          <th>Problem</th>
+        </tr>
+      </thead>
+      <tbody id="completedBody">
+        <!-- rows inserted by JS -->
+      </tbody>
+    </table>
+  </div>
+
+</div>
+    <!--new cards -->
+        <div id="problemsList"></div>
+    </div>
+
+</div>
+
+<script src="tracker.js"></script>
+</body>
+</html>
+

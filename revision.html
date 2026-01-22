@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Revision</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="layout">
+
+    <div class="sidebar">
+        <div class="logo"><i class="fa-solid fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="tracker.html">Tracker</a></li>
+            <li><a href="contests.html">Contests</a></li>
+            <li class="active">Revision</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <h1>Revision</h1>
+
+        <div class="cards-container">
+
+            <div class="revisiontopic">
+                <input type="text" id="topicInput" placeholder="Enter topic name">
+                <button type="button" id="createTopicBtn">Create</button>
+
+                <input type="text" id="problemInput" placeholder="Problem link">
+                <button id="addProblemBtn" type="button">Add Problem</button>
+            </div>
+
+            <!-- Pending Revision Cards -->
+            <div id="revisionCards"></div>
+
+            <!-- Completed Revision Table -->
+            <table>
+                <thead>
+                <tr>
+                    <th>Topic</th>
+                    <th>Problem</th>
+                    <th>Date Revised</th>
+                </tr>
+                </thead>
+                <tbody id="revisionTable"></tbody>
+            </table>
+
+            </div>
+
+    </div>
+
+</div>
+<script src="revision.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CC Tracker | Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="layout">
+ 
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo"><i class="fa-solid fa-bars"></i></div>
+        <ul class="nav-links">
+            <li class="active"><a href="index.html">Dashboard</a></li>
+            <li><a href="tracker.html">Tracker</a></li>
+            <li><a href="contests.html">Contests</a></li>
+            <li><a href="revision.html">Revision</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="main">
+        <h1>COMPETITIVE CODING TRACKER</h1>
+        <h1>Dashboard</h1>
+        <button onclick="resetApp()" id="resetBtn" title="Reset all data"><i class="fa-solid fa-trash"></i>Reset App Data</button>
+
+        <div class="cards-container">
+            <div class="card">
+                <h3>Problems Solved</h3>
+                <p id="solvedCount">0</p>
+                </div>
+
+                <div class="card">
+                <h3>Problems to Revise</h3>
+                <p id="revisionCount">0</p>
+                </div>
+
+                <div class="card">
+                <h3>Next Contest In</h3>
+                <p id="nextContest">--</p>
+                </div>
+
+                <div class="card">
+                <h3>Pending Tasks</h3>
+                <p id="pendingCount">0</p>
+                </div>
+
+                <div class="card">
+                <h3>Last Revised</h3>
+                <p id="lastRevised">--</p>
+                </div>
+                
+
+
+
+                        </div>
+                    </div>
+
+</div>
+<script src="dashboard.js"></script>
+</body>
+</html>
